@@ -1,0 +1,45 @@
+﻿<DocType html>    
+
+  <html>
+
+       <head>
+
+           <meta name="viewport" content="width=device-width"/>
+          @*  <title>@ViewBag.Title</title> *@
+           <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css"/>
+
+       </head>
+
+         <body>
+             <header>
+                 <center>
+                     
+                   @*  html tag *@                                  @* (العادي - الشكل ده ) *@
+
+                  <a href="/home/Index" class="btn btn-primary">home</a>
+                  <a href="/home/AboutUs" class="btn btn-warning">AboutUS</a>
+                  <a href="/home/privacy" class="btn btn-danger">privacy</a>
+          
+                 </center>
+
+             </header>
+
+             <div>
+                
+                 @RenderBody();           
+
+
+             </div>
+
+             <footer>
+
+                 <center>
+
+                   CopyRights&copy; Routeacademy @DateTime.Now.Year
+
+                 </center>
+             </footer>
+
+         </body>
+          
+  </html>
